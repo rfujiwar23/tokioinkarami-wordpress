@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+
+
+.wrapper {
+    position: relative;
+}
+
+.bg-kmax.scrolled {
+    background: rgb(34, 34, 34) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-size: 0.9em !important;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: rgb(200, 200, 200) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 1) !important;
+    text-decoration: underline !important;
+}
+
+.navbar-dark .navbar-toggler {
+    /* color: rgba(255,255,255,1) !important; */
+    border-color: rgba(255, 255, 255, 0) !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+
+
+
+
+
+
+/* main-body */
+
+.main-body {
+    padding: 6vh 0;
+    background: rgb(255, 255, 255);
+}
+
+.jumbotron {
+    background: linear-gradient(rgba(161, 161, 161, 0.4), rgba(237, 237, 237, 0.4)), url('https://res.cloudinary.com/rfujiwar23/image/upload/v1657516160/test/img001-tokio.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.jumbotron .left-pane-social-media {
+    position: fixed;
+    top: 25%;
+    bottom: 25%;
+    right: 0.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    z-index: 999;
+    
+}
+
+.jumbotron .left-pane-social-media .links {
+    background:rgba(238, 238, 238,0.8);
+    box-shadow: 1px 1px 3px rgba(161, 161, 161, 0.4);
+    display: none;
+}
+
+.jumbotron .left-pane-social-media .links ul {
+    list-style-type: none;
+    padding: 7px 10px;
+    margin-bottom: 0;
+}
+
+.jumbotron .left-pane-social-media .links ul li {
+    font-size: 1.25em;
+}
+
+.jumbotron .left-pane-social-media .links ul li .instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.jumbotron .left-pane-social-media .links ul li .line {
+    color: rgb(6, 199, 85);
+}
+
+.jumbotron .left-pane-social-media .links ul li .youtube {
+    color: rgb(255, 0, 0);
+}
+
+
+
+.jumbotron .logo {
+    width:90%;
+    max-width:480px;
+}
+
+
+
+.main-body .body-top p {
+    line-height: 2em;
+    /* color:#F00; */
+}
+
+.main-body .body-top .body-top-video {
+    margin: 4vh auto;
+    aspect-ratio: 16/9;
+    /* background:#076453; */
+}
+
+.main-body .body-top .body-top-video video {
+    width: 100%;
+}
+
+.mid-body .category {
+    padding: 8vh 0;
+}
+
+.mid-body .category h5,
+.bottom-body .news h5 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 4vh;
+}
+
+.mid-body .category h5 span,
+.bottom-body .news h5 span {
+    padding-bottom: 3px;
+    border-bottom: 2px solid #ad300a;
+}
+
+.mid-body .category .category-pts {
+    position: relative;
+}
+
+.mid-body .category .category-pts h4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.25em;
+    margin-bottom: 0;
+    padding: 5px;
+}
+
+.mid-body .category .category-pts h4 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.mid-body .category .category-pts h4 a:hover {
+    text-decoration: underline;
+}
+
+.bottom-body .news .news-list .news-headline-text {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.bottom-body .news .news-list .news-headline-text p {
+    margin: 0;
+}
+
+.bottom-body .news .news-list .news-headline-text p span {
+    color: rgb(156, 156, 156);
+    margin: 0 10px;
+    font-size: 0.9em;
+}
+
+.bottom-body .news .news-list .news-headline-text p span i {
+    color: rgb(156, 156, 156);
+}
+
+.footer {
+    background: rgb(34, 34, 34);
+    padding: 4vh 0 2vh;
+}
+
+.footer h4 {
+    font-size: 0.9em;
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.footer ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer ul li {
+    font-size: 0.8em;
+    line-height: 2em;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+    color: #fff;
+    font-weight: bold;
+}
+
+.footer p.copyright {
+    text-align: center;
+    font-size: 0.8em;
+    color: #fff;
+}
+
+
+
+.footer .social-network-accounts ul li {
+    display: inline-block;
+    font-size: 1.25em;
+    margin: 0 5px;
+}
+
+.footer .social-network-accounts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner {
+    background: linear-gradient(rgba(161, 161, 161, 0.4), rgba(237, 237, 237, 0.4)), url('../images/img001-tokio.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.banner .left-pane-social-media {
+    position: fixed;
+    top: 25%;
+    bottom: 25%;
+    right: 0.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    z-index: 999;
+    
+}
+
+.banner .left-pane-social-media .links {
+    background:rgba(238, 238, 238,0.8);
+    box-shadow: 1px 1px 3px rgba(161, 161, 161, 0.4);
+    display: none;
+}
+
+.banner .left-pane-social-media .links ul {
+    list-style-type: none;
+    padding: 7px 10px;
+    margin-bottom: 0;
+}
+
+.banner .left-pane-social-media .links ul li {
+    font-size: 1.25em;
+}
+
+.banner .left-pane-social-media .links ul li .instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner .left-pane-social-media .links ul li .line {
+    color: rgb(6, 199, 85);
+}
+
+.banner .left-pane-social-media .links ul li .youtube {
+    color: rgb(255, 0, 0);
+}
+
+
+
+.banner .logo {
+    width:90%;
+    max-width:480px;
+}
+@media screen and (max-width:768px) {
+    .navbar-dark .navbar-nav .nav-link {
+        color: rgba(83, 83, 83, 0.7) !important;
+        font-size: 0.9em !important;
+    }
+    
+    .navbar-dark .navbar-nav .nav-link.active {
+        color: rgb(33, 33, 33) !important;
+    }
+    
+    .navbar-dark .navbar-nav .nav-link:hover {
+        color: rgb(25, 24, 97) !important;
+        text-decoration: underline !important;
+    }
+}
+
+
+/* single */
+.sub-page-main-body {
+    padding:5vh 0;
+}
+
+.sub-page-main-body .body-top {
+    margin:3vh 0;
+}
+
+.sub-page-main-body .body-top h2,
+.sub-page-main-body .mid-body .box h2 {
+    text-align: center;
+    font-size: 1.25em;
+}
+
+.sub-page-main-body .mid-body .box {
+    margin:8vh auto;
+}
+
+.sub-page-main-body .body-top h2 span.gradient-underline,
+.sub-page-main-body .mid-body .box h2 span.gradient-underline {
+    padding-bottom: 4px;
+    position: relative;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+
+.sub-page-main-body .body-top h2 span.gradient-underline::after,
+.sub-page-main-body .mid-body .box h2 span.gradient-underline::after {
+    background: #f00;
+    background: linear-gradient(to right, transparent 0%, #AC300B 50%, transparent 100%);  
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+}
+
+@media screen and (max-width:500px) {
+
+    .mid-body .category .category-pts h4 {
+        font-size: 1em;
+    }
+    .footer h4 {
+        font-size: 0.8em;
+        color: #fff;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    .footer ul li {
+        font-size: 0.7em;
+        line-height: 2em;
+    }
+
+    .footer p.copyright {
+        font-size: 0.7em;
+    }
+
+}
+
+
+
